@@ -1,6 +1,5 @@
-api_login_check:
-    path: /api/login_check
-# config/routes.yaml
-imports:
-    - { resource: routes/api.yaml }
-    # ne pas importer routes/security.yaml s'il est vide ou cassé
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
